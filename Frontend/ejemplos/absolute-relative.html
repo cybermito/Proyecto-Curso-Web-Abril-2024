@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posición relativa y absoluta</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: grey;
+        }
+        
+        .container {
+            width: 600px;
+            height: 500px;
+            background: lightcoral;
+        }
+
+        .subContainer {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background: lightgreen ;
+            top: 100px;
+            left: 100px;
+        }
+
+        .item {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: lightskyblue;
+            top: 60px;
+            left: 20px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="subContainer">
+
+            <div class="item"></div>
+
+        </div> 
+
+    </div>    
+
+</body>
+</html>
