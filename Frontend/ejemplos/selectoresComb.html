@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores combinados</title>
+    <style>
+        /* Selectores Descendientes */
+        div p {
+            color: lime;
+        }
+        /* Selectores Directos */
+
+        div > div {
+            background: plum;
+        }
+
+        /* Selectores Elementos adyacentes */
+
+        div + section {
+            background: violet;
+        }
+
+        /* Selectores General de Hermanos */
+
+        div ~ p {
+            color: #72d02ec9;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <p>Atigra</p>
+            <div class="es">Es</div>
+            <p>Otro párrafo en div</p>
+        </div>
+    </div>
+    <p>Clase de selectores</p>
+    <p>Clase de selectores</p>
+    <div>Elemento div</div>
+    <section>
+        Es chachi
+    </section>
+    <div>
+        Makers
+    </div>
+</body>
+</html>

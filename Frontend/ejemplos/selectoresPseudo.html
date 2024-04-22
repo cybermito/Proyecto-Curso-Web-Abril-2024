@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Pseudoelementos y Pseudoclases</title>
+    <style>
+        p {
+            color: salmon;
+        }
+
+        /* cambiar estilos a un pseudoElemento */
+
+        p::first-letter{
+            color: rgb(255, 0, 0);
+        }
+
+        p::before{
+            content:"👉";
+        }
+
+        p::after {
+            content: "🎉";
+        }
+
+        ::placeholder {
+            color: violet;
+        }
+
+        /* Cambiar estilos con las pseudoClases */
+
+        p:hover{
+            color:rgb(255, 0, 200);
+        }
+
+        div p:nth-child(3) {
+            color: rgb(32, 30, 30);
+        }
+
+    </style>
+</head>
+<body>
+    <p>Hello</p>
+    <div>
+        <p>Atigra</p>
+        <p>Makers</p>
+        <p>Si puedes soñarlo puedes crearlo</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
