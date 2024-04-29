@@ -1,0 +1,65 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 80%;
+    text-align: center;
+    font-size: 2em;
+}
+
+section {
+    width: 80%;
+    margin: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+section img {
+    width: 200px;
+    margin: 0 50px;
+}
+
+button {
+    background: lightcyan;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin: 20px;
+    font-size: medium;
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+section .imagenes {
+    padding: 50px;
+   
+}
+
+section .imagenes img {
+    cursor: pointer;
+}
+
+.seleccionJugador p {
+    margin: 0 auto;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+section .jugadas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
