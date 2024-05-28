@@ -1,0 +1,25 @@
+use("Atigra_Makers")
+
+//Actualizar un documento
+
+db.usuarios.updateOne(
+    //query del id a modificar
+    {_id: ObjectId('66336a6d08d66c5abd3c12a8')},
+    {
+        $set: 
+        {
+            name: "Nombre cambiado",
+            otraPropiedad: "Nueva"
+        },
+        $inc:
+        {
+            age: 10
+        },
+    }
+)
+
+// db.usuarios.updateMany => Para cambiar varios documentos
+
+//$set => modificar y/o crear una propiedad
+//$inc => incrementa el valor de una propiedad numérica
+

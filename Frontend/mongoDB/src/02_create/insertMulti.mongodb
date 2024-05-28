@@ -1,0 +1,24 @@
+//Conectamos a la base de datos y si no existe la creará
+use("Atigra_Makers")
+
+//Creamos varios documentos a la vez
+
+db.usuarios.insertMany([
+    {
+        name: "Luna",
+        age: 3,
+        hobbies: ["jugar", "comer", "dormir"]
+    },
+
+    {
+        name: "Pablo",
+        age: 18,
+        hobbies: ["video games", "fotografía"]
+    },
+
+    {
+        name: "Nuria",
+        age: 46,
+        hobbies: ["senderismo", "leer", "música"]
+    }
+])

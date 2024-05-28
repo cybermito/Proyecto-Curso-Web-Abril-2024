@@ -1,0 +1,3 @@
+use("Atigra_Makers")
+
+db.usuarios.find()

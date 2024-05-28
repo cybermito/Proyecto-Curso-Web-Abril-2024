@@ -84,7 +84,7 @@ function mostrarSeleccion(jugador){
 }
 
 function verGanador(){
-
+    
 }
 //Algoritmo para saber quién gano la jugada
 //Primeramente comprobamos si hay empate, después si gana el jugador

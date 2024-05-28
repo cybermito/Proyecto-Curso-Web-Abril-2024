@@ -1,0 +1,14 @@
+use("Atigra_Makers")
+
+//Actualizar un documento
+
+db.usuarios.updateOne(
+    //query del id a modificar
+    {_id: ObjectId('66336a6d08d66c5abd3c12a8')},
+    {
+        $rename:
+        {
+            otraPropiedad: "Grado"
+        }
+    }
+)

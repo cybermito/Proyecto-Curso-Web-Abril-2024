@@ -1,0 +1,12 @@
+//Conectamos a la base de datos y si no existe la creará
+use("Atigra_Makers")
+
+//Insertamos o creamos un documento nuevo
+db.usuarios.insertOne( //Si la colección no existe la crea.
+    {
+        name: "Antonio",
+        age: 49,
+        hobbies: ["progamar", "senderismo", "Robótica"]
+    }
+)
+

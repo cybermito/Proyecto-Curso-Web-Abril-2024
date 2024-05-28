@@ -1,0 +1,7 @@
+use("Atigra_Makers")
+
+//Borrar un documento
+
+db.usuarios.deleteOne({
+    name: "Nombre cambiado"
+})
